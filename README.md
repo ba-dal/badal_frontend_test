@@ -30,11 +30,17 @@
 
 ### 4. API
 
-- 사용할 API 주소 :
-- Create :
-- Read :
-- Update :
-- Delete :
+- 사용할 API 주소 : http://15.164.98.46:8800
+- Create ( POST ) : http://15.164.98.46:8800/2020-07-07
+  - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 )
+  - 필수값 ( JSON - Request Body ) : title, body ( 텍스트 형식 )
+- Read ( GET ) : http://15.164.98.46:8800/2020-07 or http://15.164.98.46:8800/2020-07-07
+  - URI : /YYYY-MM 또는 /YYYY-MM-DD 형식의 날짜
+- Update ( PUT ) : http://15.164.98.46:8800/2020-07-07/ec68d842-2845-4113-80a5-e7a73a3581d1
+  - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 ) + 일정의 uuid ( id 값 참고 )
+  - 필수값 ( JSON - Request Body ) : title, body 둘 중 하나는 반드시 전달 ( null, empty string 허용x )
+- Delete ( Delete ) : http://15.164.98.46:8800/2020-07-07/ec68d842-2845-4113-80a5-e7a73a3581d1
+  - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 ) + 일정의 uuid ( id 값 참고 )
 
 서버는 최소한으로 구성되어 있습니다.
 결점 및 오류 발생으로 진행이 어려우신 경우 아래로 연락주세요.
