@@ -34,7 +34,7 @@
 - Create ( POST ) : http://15.164.98.46:8800/2020-07-07
   - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 )
   - 필수값 ( JSON - Request Body ) : title, body ( 텍스트 형식 )
-  - Response 예시:
+  - Response 예시 (JSON):
   ```
   {
     "year": "2020",
@@ -82,7 +82,7 @@
 - Update ( PUT ) : http://15.164.98.46:8800/2020-07-07/ec68d842-2845-4113-80a5-e7a73a3581d1
   - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 ) + 일정의 uuid ( id 값 참고 )
   - 필수값 ( JSON - Request Body ) : title, body 둘 중 하나는 반드시 전달 ( null, empty string 허용x )
-  - Response 예시:
+  - Response 예시 (JSON):
   ```
   {
     "message": "일정이 수정되었습니다."
@@ -90,7 +90,7 @@
   ```
 - Delete ( Delete ) : http://15.164.98.46:8800/2020-07-07/ec68d842-2845-4113-80a5-e7a73a3581d1
   - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 ) + 일정의 uuid ( id 값 참고 )
-  - Response 예시:
+  - Response 예시 (JSON):
   ```
   {
     "message": "일정이 삭제되었습니다."
