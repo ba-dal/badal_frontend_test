@@ -12,6 +12,7 @@
 ### 2. 요구사항
 
 - 반드시 상태관리 모듈을 사용해주세요. ( Mobx 또는 Redux )
+- React hooks를 이용해 구현해주세요.
 - 마크업을 준수해주세요.
 - 일정에 대한 CRUD는 필수적으로 구현해주세요. ( 하단 api 참고 )<br/>
   : 일정은 제목과 상세 내용으로 이루어져 있습니다.<br/>
@@ -32,9 +33,11 @@
 
 - 사용할 API 주소 : http://15.164.98.46:8800
 - Create ( POST ) : http://15.164.98.46:8800/2020-07-07
+
   - URI : /YYYY-MM-DD 형식의 날짜 ( 유효성검사 필수 )
   - 필수값 ( JSON - Request Body ) : title, body ( 텍스트 형식 )
   - Response 예시 (JSON):
+
   ```
   {
     "year": "2020",
@@ -45,10 +48,10 @@
     "id": "unique ID"
   }
   ```
-  
+
 - Read ( GET ) : http://15.164.98.46:8800/2020-07 or http://15.164.98.46:8800/2020-07-07
   - URI : /YYYY-MM 또는 /YYYY-MM-DD 형식의 날짜
-  - Response 예시: 
+  - Response 예시:
     - /YYYY-MM (JSON):
     ```
     {
